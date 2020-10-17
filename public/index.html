@@ -32,10 +32,15 @@
     <title>React App</title>
   </head>
 
-  <body>
+  <body onbeforeunload="return myFunction()">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <script>
+      function myFunction() {
+        return "You may lose progress";
+      }
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
