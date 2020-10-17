@@ -166,7 +166,7 @@ export default function App() {
   const SaveContent = () => {
     const contenttosave = "data:text/plain," + JSON.stringify(ContentList);
     console.log(contenttosave);
-    saveAs(contenttosave, "Safely" + dateobject.toLocaleString() + " .json");
+    saveAs(contenttosave, "Safely " + dateobject.toLocaleString() + " .json");
   };
   return (
     <div className="App">
