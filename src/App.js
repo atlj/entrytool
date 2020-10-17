@@ -166,7 +166,7 @@ export default function App() {
   const SaveContent = () => {
     const contenttosave = "data:text/plain," + JSON.stringify(ContentList);
     console.log(contenttosave);
-    saveAs(contenttosave, "Output.json");
+    saveAs(contenttosave, "Safely" + dateobject.toLocaleString() + " .json");
   };
   return (
     <div className="App">
@@ -187,7 +187,7 @@ export default function App() {
         </Modal.Footer>
       </Modal>
       <Container fluid>
-        <h1>Safely Database Entry Tool</h1>
+        <h1>Safely Database Entry Tool🚀</h1>
         <Form>
           <Form.Group>
             <Form.Label>Enter Content Here</Form.Label>
