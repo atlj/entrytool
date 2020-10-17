@@ -1,0 +1,5 @@
+.App {
+  display: flex;
+  font-family: sans-serif;
+  flex-direction: column;
+}
