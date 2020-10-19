@@ -164,9 +164,17 @@ export default function App() {
     settotalcount(totalcount + 1);
   };
   const SaveContent = () => {
-    const contenttosave = "data:text/plain," + JSON.stringify(ContentList);
+    const contenttosave = "data:text/plain," + JSON.stringify(createexport());
     console.log(contenttosave);
     saveAs(contenttosave, "Safely " + dateobject.toLocaleString() + " .json");
+  };
+
+  const createexport = () => {
+    const toexport = {};
+    ContentList.forEach((element) => {
+      toexport[element.key] = element;
+    });
+    return toexport;
   };
   return (
     <div className="App">
@@ -175,7 +183,7 @@ export default function App() {
           <Modal.Title>Generated JSON</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Row>{JSON.stringify(ContentList)}</Row>
+          <Row>{JSON.stringify(createexport())}</Row>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
