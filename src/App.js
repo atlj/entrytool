@@ -23,7 +23,8 @@ import {
   CategoryImmunityIcon,
   CategoryNutritionIcon,
   CategoryStayYoungIcon,
-  CategoryStressManagementIcon
+  CategoryStressManagementIcon,
+  CategoryMedicalFactsIcon
 } from "./icons";
 
 export default function App() {
@@ -94,6 +95,13 @@ export default function App() {
           <ReactSVG
             style={{ marginLeft: 4, marginRight: 9, height: 30, width: 30 }}
             src={CategoryStressManagementIcon}
+          />
+        );
+      case "Medical Facts":
+        return (
+          <ReactSVG
+            style={{ marginLeft: 4, marginRight: 9, height: 30, width: 30 }}
+            src={CategoryMedicalFactsIcon}
           />
         );
     }
@@ -223,6 +231,7 @@ export default function App() {
               <option value="Healthy Habits">Healthy Habits</option>
               <option value="Common Mistakes">Common Mistakes</option>
               <option value="Immunity">Immunity</option>
+              <option value="Medical Facts">Medical Facts</option>
             </Form.Control>
           </Form.Group>
           <Form.Group>
