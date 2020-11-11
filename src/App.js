@@ -108,7 +108,7 @@ export default function App() {
   };
 
   const CopytoClipboard = () => {
-    clipbord(JSON.stringify(ContentList));
+    clipbord(JSON.stringify(createexport()));
   };
   const RemoveContent = (key) => {
     let templist = [];
