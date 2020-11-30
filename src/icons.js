@@ -6,6 +6,7 @@ import CategoryCommonMistakesIcon from "./assets/icons/commonmistakes.svg";
 import CategoryStressManagementIcon from "./assets/icons/stressmanagement.svg";
 import CategoryStayYoungIcon from "./assets/icons/stayyoung.svg";
 import CategoryMedicalFactsIcon from "./assets/icons/medicalfacts.svg";
+import CategoryMotivationIcon from "./assets/icons/motivation.svg";
 
 export {
   CategoryGeneralIcon,
@@ -16,4 +17,5 @@ export {
   CategoryStressManagementIcon,
   CategoryStayYoungIcon,
   CategoryMedicalFactsIcon,
+  CategoryMotivationIcon
 };
