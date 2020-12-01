@@ -24,7 +24,7 @@ import {
   CategoryNutritionIcon,
   CategoryStayYoungIcon,
   CategoryStressManagementIcon,
-  CategoryMedicalFactsIcon,
+  CategoryMedicalHacksIcon,
   CategoryMotivationIcon
 } from "./icons";
 
@@ -105,11 +105,11 @@ export default function App() {
             src={CategoryStressManagementIcon}
           />
         );
-      case "Medical Facts":
+      case "Medical Hacks":
         return (
           <ReactSVG
             style={{ marginLeft: 4, marginRight: 9, height: 30, width: 30 }}
-            src={CategoryMedicalFactsIcon}
+            src={CategoryMedicalHacksIcon}
           />
         );
     }
@@ -240,7 +240,7 @@ export default function App() {
               <option value="Healthy Habits">Healthy Habits</option>
               <option value="Common Mistakes">Common Mistakes</option>
               <option value="Immunity">Immunity</option>
-              <option value="Medical Facts">Medical Facts</option>
+              <option value="Medical Hacks">Medical Hacks</option>
             </Form.Control>
           </Form.Group>
           <Form.Group>
